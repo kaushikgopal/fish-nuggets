@@ -57,9 +57,3 @@ alias suspend '/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Reso
 alias spotoff "sudo mdutil -a -i off"
 # Enable Spotlight
 alias spoton "sudo mdutil -a -i on"
-
-
-
-if test -s $HOME/.config/fish/local.fish
-    . $HOME/.config/fish/local.fish
-end
