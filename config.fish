@@ -1,12 +1,10 @@
 if status --is-login
-	for p in /usr/bin /usr/local/bin /opt/local/bin /usr/local/mysql/bin /opt/local/lib/postgresql83/bin ~/bin ~/.config/fish/bin
-		if test -d $p
-			set PATH $p $PATH
-		end
-	end
+    for p in /usr/bin /usr/local/bin /opt/local/bin /usr/local/sbin /usr/local/mysql/bin /usr/local/Cellar/postgresql/9.1.4/bin /opt/local/lib/postgresql83/bin /usr/local/rvm/gems/ruby-1.9.3-p194@cmu_sds/bin /usr/local/rvm/rubies/ruby-1.9.3-p194/bin /usr/local/rvm/bin /opt/sm/bin /opt/sm/pkg/active/bin /opt/sm/pkg/active/sbin ~/bin ~/.config/fish/bin
+        if test -d $p
+            set PATH $p $PATH
+        end
+    end
 end
-
-
 
 set fish_greeting ""
 set -x CLICOLOR 1
